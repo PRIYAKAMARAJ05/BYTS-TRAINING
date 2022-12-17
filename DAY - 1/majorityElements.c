@@ -1,14 +1,14 @@
 int majorityElement(int* nums, int numsSize){
-    int num=arr[0];
+    int num=nums[0];
     int numCount=1;
     for(int i=0;i<numsSize;i++){
-        if(arr[i]==num){
+        if(nums[i]==num){
             ++numcounnt;
         }else{
             --numcount;
         }
         if(numCount==0){
-            num=arr[i];
+            num=nums[i];
             numCount=1;
         }
     }
